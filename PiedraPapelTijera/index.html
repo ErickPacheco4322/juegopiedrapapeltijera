@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiedraPapelTijera</title>    
+
+ </head>
+<body >
+    <style>
+        body{
+            background-image:url("Assets/imagenes/fondoo.jpg");
+            background-size: 100% 160%;
+         }
+    </style>
+    <div style="text-align: center;">
+        <h1 style="color: #ffffff;"><MARQUEE  BEHAVIOR="ALTERNATE">-----Piedra, Papel o Tijera-----</MARQUEE></h1>
+        <h2 style="color: #ffffff;">¿Estas listo? PARASITO!!</h2>
+        <img src="Assets/imagenes/gif1.gif" width="300" height="150" class="juego_img">
+         <br>
+        <Button id="Piedra" type="submit" onclick="piedraFun()"><img src="Assets/imagenes/piedra.gif" style="margin-top: 10%; width: 85px; height: 85px;"></Button>
+        <Button id="Papel" type="submit" onclick="papelFun()"><img src="Assets/imagenes/papel.gif" style="margin-top: 10%; width: 85px; height: 85px;"></Button>
+        <Button id="Tijera" type="submit"onclick=tijeraFun()><img src="Assets/imagenes/tijera.gif" style="margin-top: 10%; width: 85px; height: 85px;"></Button>
+        
+    </div>
+</body>
+<script>
+
+    var opcion;
+
+ function piedraFun(){
+    opcion = 0;
+    console.log(opcion);
+    numeroAleatorio();
+
+ }
+ function papelFun(){
+    opcion = 1;
+    console.log(opcion);
+ }
+ function tijeraFun(){
+    opcion = 2;
+    console.log(opcion);
+ }
+
+ //Funcion numero aleatorio
+ function numeroAleatorio(){
+ var numero = Math.random()*1;
+ console.log(numero);   
+}
+
+ 
+
+</script>
+</html>
